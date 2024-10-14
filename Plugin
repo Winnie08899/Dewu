@@ -1,0 +1,9 @@
+#!name=得物
+#!desc=得物去开屏广告
+
+[Rewrite]
+^https?:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement reject
+^https?:\/\/cdn\.poizon\.com\/node-common\/.*.jpg reject-200
+
+[Mitm]
+hostname = cdn.poizon.com,app.dewu.com
